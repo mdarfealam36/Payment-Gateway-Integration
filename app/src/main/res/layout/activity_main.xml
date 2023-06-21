@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:layout_above="@id/EdtAmount"
+    android:layout_marginBottom="100dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/payment_gateway_logo"/>
+
+
+    <EditText
+        android:id="@+id/EdtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter Amount"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/MakePaymentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EdtAmount"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/border"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:text="Make Payment"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
